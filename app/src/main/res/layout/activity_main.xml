@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layaut1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#636363"
+
+        app:errorEnabled="true"
+       >
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:backgroundTint="#636363"
+            android:hint="Ex Pasto, Co"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2E7531"
+        android:text="SEARCH WEATCHER"
+        android:textColor="#ffffff"
+        android:textSize="19dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#79D6C4"
+        >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Max:"
+
+            android:gravity="center"
+             />
+
+        <TextView
+            android:id="@+id/lblCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Current Weather"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#F8E7A2"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Max:"
+
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/lblmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Current Weather"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#86C2E6"
+        >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Max:"
+
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/lblmax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Current Weather"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#EE948C"
+        >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Max:"
+
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textViewWeather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Current Weather"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="24dp"
+
+        android:layout_marginRight="16dp"
+        android:src="?android:attr/panelBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeather" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2E7531"
+        android:text="GO TO MAPS"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="19dp" />
+
+</LinearLayout>
